@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumarapu Bhavya Sri | Aspiring Python Developer</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Portfolio of Kumarapu Bhavya Sri, an Aspiring Python Developer and B.Tech 2026 graduate from Malla Reddy College of Engineering for Women. Specialized in Python, SQL, and Machine Learning.">
+    <meta name="keywords" content="Kumarapu Bhavya Sri, Python Developer, Machine Learning, Portfolio, SQL, Data Visualization, Malla Reddy College of Engineering for Women, Python Programmer">
+    <meta name="author" content="Kumarapu Bhavya Sri">
+    
+    <!-- Premium Typography: Poppins (headings) & Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Dynamic Custom Cursor Glow element -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Minimal Loading Screen -->
+    <div id="loader" class="loader-container">
+        <div class="loader-circle"></div>
+        <div class="loader-text">KB</div>
+    </div>
+
+    <!-- Sticky Glass Navigation Bar -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span>KB<span class="logo-accent">/&gt;</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="resume.pdf" target="_blank" class="btn btn-outline nav-cta">Download Resume</a>
+            </nav>
+            
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-overlay">
+        <div class="mobile-menu">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#education" class="mobile-link">Education</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="resume.pdf" target="_blank" class="btn btn-primary mobile-cta">Download Resume</a>
+        </div>
+    </div>
+
+    <!-- Hero Section with Glowing Gradients & Orbital Profile Ring -->
+    <section id="home" class="hero-section">
+        
+        <!-- Abstract Contour Waves SVG (Top Left & Bottom Right Backgrounds) -->
+        <div class="contour-wave wave-top-left">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M-20,10 C10,30 30,-10 60,20 C80,40 60,80 100,70" stroke="rgba(6, 182, 212, 0.08)" stroke-width="0.5" fill="none"/>
+                <path d="M-20,20 C15,40 25,0 55,30 C75,50 65,90 105,80" stroke="rgba(6, 182, 212, 0.06)" stroke-width="0.5" fill="none"/>
+                <path d="M-20,30 C20,50 20,10 50,40 C70,60 70,100 110,90" stroke="rgba(6, 182, 212, 0.04)" stroke-width="0.5" fill="none"/>
+            </svg>
+        </div>
+        <div class="contour-wave wave-bottom-right">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,80 C30,70 40,110 70,90 C90,80 80,40 120,30" stroke="rgba(6, 182, 212, 0.08)" stroke-width="0.5" fill="none"/>
+                <path d="M-10,90 C20,80 30,120 60,100 C80,90 90,50 130,40" stroke="rgba(6, 182, 212, 0.05)" stroke-width="0.5" fill="none"/>
+                <path d="M10,70 C40,60 50,100 80,80 C100,70 70,30 110,20" stroke="rgba(6, 182, 212, 0.03)" stroke-width="0.5" fill="none"/>
+            </svg>
+        </div>
+
+        <div class="container hero-grid">
+            <!-- Left content block (Typography, CTA, Social Grid) -->
+            <div class="hero-content reveal">
+                <span class="hero-badge">Python Developer</span>
+                <h1 class="hero-title">
+                    I'M <br>
+                    <span class="name-gradient">KUMARAPU BHAVYA SRI</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="typing-text" id="typing-text"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Passionate about Python, SQL, data visualization, and problem solving with hands-on experience through academic and self-learning projects.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">Contact Me</a>
+                    <a href="resume.pdf" target="_blank" class="btn btn-outline-hero">Download Resume</a>
+                </div>
+                
+                <!-- Square Socials Find Me Grid (Matches user visual exactly) -->
+                <div class="find-me-container">
+                    <span class="find-me-label">FIND ME</span>
+                    <div class="find-me-grid">
+                        <a href="https://www.linkedin.com/in/kumarapu-bhavya-sri/" target="_blank" class="find-me-box" title="LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="https://github.com/kumarapubhavyasri" target="_blank" class="find-me-box" title="GitHub">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kumarapubhavyasri@gmail.com&su=Portfolio%20Contact&body=Hello%20KUMARAPU%20BHAVYA%20SRI" target="_blank" class="find-me-box" title="Gmail Compose">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right visual block (Large circular profile framed by animated orbital ring) -->
+            <div class="hero-visual reveal">
+                <div class="orbital-wrap">
+                    
+                    <!-- Circular Avatar Profile -->
+                    <div class="orbital-profile-container">
+                        <svg viewBox="0 0 100 100" class="profile-svg-placeholder" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="48" fill="rgba(6, 182, 212, 0.05)" stroke="#06B6D4" stroke-width="1"/>
+                            <circle cx="50" cy="38" r="16" fill="#06B6D4" opacity="0.85"/>
+                            <path d="M22 76C22 63.85 32.85 53 45 53H55C67.15 53 78 63.85 78 76V82H22V76Z" fill="#06B6D4"/>
+                            <path d="M38 36L45 43L62 26" stroke="#070A13" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    <!-- Glowing Circular Orbital ring -->
+                    <div class="orbital-ring"></div>
+
+                    <!-- Floating Node 1 (Top Right) -->
+                    <div class="orbital-node node-top-right">
+                        <a href="https://www.linkedin.com/in/kumarapu-bhavya-sri/" target="_blank" class="node-badge-link">
+                            <div class="node-icon bg-cyan">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </div>
+                            <div class="node-text">
+                                <span class="node-label">KUMARAPU BHAVYA SRI</span>
+                                <span class="node-sub">LinkedIn Connect</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Floating Node 2 (Bottom Left) -->
+                    <div class="orbital-node node-bottom-left">
+                        <a href="https://github.com/kumarapubhavyasri" target="_blank" class="node-badge-link">
+                            <div class="node-icon bg-pink">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </div>
+                            <div class="node-text">
+                                <span class="node-label">KUMARAPU BHAVYA SRI</span>
+                                <span class="node-sub">GitHub Developer</span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Who I Am</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-visual reveal">
+                    <div class="profile-card glass-card">
+                        <div class="profile-avatar">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="48" fill="rgba(6, 182, 212, 0.05)" stroke="#06B6D4" stroke-width="1.5"/>
+                                <circle cx="50" cy="40" r="18" fill="#06B6D4" opacity="0.85"/>
+                                <path d="M18 78C18 64.7452 28.7452 54 42 54H58C71.2548 54 82 64.7452 82 78V85H18V78Z" fill="#06B6D4"/>
+                                <path d="M35 38L42 45L58 29" stroke="#070A13" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="profile-details">
+                            <h3>KUMARAPU BHAVYA SRI</h3>
+                            <p>Aspiring Python Developer</p>
+                            <span class="badge-tag">Self-Driven Learner</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-content reveal">
+                    <h3 class="about-greeting">Developing elegant, optimal solutions with clean code.</h3>
+                    <p class="about-text">
+                        Kumarapu Bhavya Sri is a 2026 graduate from Malla Reddy College of Engineering for Women, passionate about software development, analytical thinking, and continuous learning. A self-driven fresher with experience gained through academic projects and personal projects, actively seeking opportunities in Python development and problem-solving roles.
+                    </p>
+                    
+                    <div class="about-metrics">
+                        <div class="metric-item">
+                            <span class="metric-number">2026</span>
+                            <span class="metric-label">Graduation Year</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-number">10+</span>
+                            <span class="metric-label">Academic & Self Projects</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-number">100%</span>
+                            <span class="metric-label">Committed Learner</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cta-wrapper">
+                        <!-- Direct browser web Gmail compose link in new tab -->
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kumarapubhavyasri@gmail.com&su=Portfolio%20Contact&body=Hello%20KUMARAPU%20BHAVYA%20SRI" target="_blank" class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>Mail Me</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding section-bg">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Technical Competence</span>
+                <h2 class="section-title">My Toolkit</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Python Card -->
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon-wrapper python-accent">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2zm1 14.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-.5-4.5a1 1 0 0 1-1-1V7a1 1 0 1 1 2 0v4a1 1 0 0 1-1 1z"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Python</h3>
+                    <p class="skill-description">Core scripting, OOPs concepts, automated data parsing, functional algorithms, and file structure manipulations.</p>
+                    <span class="skill-tag">Expertise Core</span>
+                </div>
+
+                <!-- SQL Card -->
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon-wrapper sql-accent">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">SQL</h3>
+                    <p class="skill-description">Relational database query scripting, table schema joints, aggregating dataset metrics, and structured manipulation.</p>
+                    <span class="skill-tag">Database</span>
+                </div>
+
+                <!-- Data Visualization Card -->
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon-wrapper viz-accent">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3v18h18"></path>
+                            <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Data Visualization</h3>
+                    <p class="skill-description">Translating raw tabular data arrays into analytical dashboards and insights using visualization tools.</p>
+                    <span class="skill-tag">Analytics</span>
+                </div>
+
+                <!-- Problem Solving Card -->
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon-wrapper problem-accent">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h9a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Problem Solving</h3>
+                    <p class="skill-description">Applying algorithmic structures, mathematical principles, and runtime complexities to code puzzles.</p>
+                    <span class="skill-tag">Cognitive</span>
+                </div>
+
+                <!-- DBMS Card -->
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon-wrapper dbms-accent">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">DBMS</h3>
+                    <p class="skill-description">Analyzing schema normalization (1NF, 2NF, 3NF), key constraints, and transactional consistency models.</p>
+                    <span class="skill-tag">Infrastructure</span>
+                </div>
+
+                <!-- GitHub Card -->
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon-wrapper git-accent">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">GitHub</h3>
+                    <p class="skill-description">Source control versioning, repository merging, branch pull-requests, and collaboration workflows.</p>
+                    <span class="skill-tag">Version Control</span>
+                </div>
+
+                <!-- Data Analysis Card -->
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon-wrapper analysis-accent">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            <line x1="8" y1="11" x2="14" y2="11"></line>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Data Analysis</h3>
+                    <p class="skill-description">Preprocessing and cleaning complex raw tabular files to extract structured mathematical correlations.</p>
+                    <span class="skill-tag">Data Science</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section with Particle Background & Glassmorphic Cards -->
+    <section id="projects" class="projects-section section-padding">
+        <!-- Canvas Particle Background -->
+        <canvas id="project-particles" class="project-canvas-bg"></canvas>
+
+        <div class="container container-relative">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Practical Engineering</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 (Glassmorphic) -->
+                <div class="project-card glass-card reveal">
+                    <!-- Glow mouse tracking outline element -->
+                    <div class="card-glow-layer"></div>
+                    <div class="project-visual-wrapper">
+                        <!-- Custom SVG Illustration: Agri ML Recommendation -->
+                        <svg class="project-illustration" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="240" rx="12" fill="transparent"/>
+                            <!-- Graph Nodes (ML model) -->
+                            <path d="M100 160L160 100L240 140L300 80" stroke="#06B6D4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="100" cy="160" r="6" fill="#06B6D4" stroke="#070A13" stroke-width="2"/>
+                            <circle cx="160" cy="100" r="6" fill="#06B6D4" stroke="#070A13" stroke-width="2"/>
+                            <circle cx="240" cy="140" r="6" fill="#06B6D4" stroke="#070A13" stroke-width="2"/>
+                            <circle cx="300" cy="80" r="6" fill="#06B6D4" stroke="#070A13" stroke-width="2"/>
+                            
+                            <!-- Crop Growth Vectors -->
+                            <path d="M300 80C300 80 320 60 320 40C320 60 300 80 300 80Z" fill="#10B981"/>
+                            <path d="M300 80C300 80 280 60 280 40C280 60 300 80 300 80Z" fill="#10B981"/>
+                            
+                            <!-- Glowing dashboard items -->
+                            <rect x="40" y="30" width="100" height="40" rx="8" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.05)" filter="drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.05))"/>
+                            <text x="52" y="54" fill="#F8FAFC" font-family="Poppins" font-size="10" font-weight="600">N: 45 | P: 30</text>
+                            <rect x="40" y="80" width="80" height="25" rx="6" fill="rgba(6, 182, 212, 0.1)"/>
+                            <text x="50" y="96" fill="#06B6D4" font-family="Poppins" font-size="9" font-weight="600">NPK Inputs</text>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Machine Learning & AgriTech</span>
+                        <h3 class="project-title">Multi-Criteria Agriculture Recommendation System</h3>
+                        <p class="project-description">
+                            Developed an intelligent agriculture recommendation system using machine learning techniques to predict suitable crops and fertilizers based on multiple agricultural parameters. The project helps improve farming decisions and productivity through data-driven recommendations.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Machine Learning</span>
+                            <span class="project-tag">Data Analysis</span>
+                            <span class="project-tag">Data Visualization</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="resume.pdf" target="_blank" class="btn btn-sm btn-primary">
+                                <span>View Details</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                            <a href="https://github.com/kumarapubhavyasri" target="_blank" class="btn btn-sm btn-secondary">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Glassmorphic) -->
+                <div class="project-card glass-card reveal">
+                    <div class="card-glow-layer"></div>
+                    <div class="project-visual-wrapper">
+                        <!-- Custom SVG Illustration: Social Bot Clickstream -->
+                        <svg class="project-illustration" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="240" rx="12" fill="transparent"/>
+                            <!-- Sequence Blocks -->
+                            <g opacity="0.8">
+                                <rect x="40" y="50" width="60" height="30" rx="6" fill="rgba(255, 255, 255, 0.05)"/>
+                                <text x="55" y="69" fill="#94A3B8" font-family="JetBrains Mono" font-size="10">CLICK</text>
+                                <path d="M100 65H130" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2 2"/>
+                                <rect x="130" y="50" width="60" height="30" rx="6" fill="#06B6D4" filter="drop-shadow(0 2px 4px rgba(6,182,212,0.2))"/>
+                                <text x="145" y="69" fill="#070A13" font-family="JetBrains Mono" font-size="10" font-weight="600">HOVER</text>
+                                <path d="M190 65H220" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2 2"/>
+                                <rect x="220" y="50" width="60" height="30" rx="6" fill="rgba(255, 255, 255, 0.05)"/>
+                                <text x="235" y="69" fill="#94A3B8" font-family="JetBrains Mono" font-size="10">CLICK</text>
+                                <path d="M280 65H310" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2 2"/>
+                                <rect x="310" y="50" width="50" height="30" rx="6" fill="#EF4444" filter="drop-shadow(0 2px 4px rgba(239,68,68,0.2))"/>
+                                <text x="323" y="69" fill="#070A13" font-family="JetBrains Mono" font-size="10" font-weight="600">BOT</text>
+                            </g>
+                            
+                            <!-- Analysis Screen overlay -->
+                            <rect x="40" y="110" width="320" height="85" rx="8" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.05)" filter="drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.04))"/>
+                            <text x="60" y="135" fill="#F8FAFC" font-family="Poppins" font-size="11" font-weight="600">Sequence Pattern Analyzer</text>
+                            <circle cx="70" cy="165" r="12" fill="rgba(6, 182, 212, 0.1)"/>
+                            <path d="M66 165H74M70 161V169" stroke="#06B6D4" stroke-width="2"/>
+                            <text x="92" y="162" fill="#F8FAFC" font-family="Poppins" font-size="10" font-weight="600">Anomaly Rate</text>
+                            <text x="92" y="174" fill="#94A3B8" font-family="Inter" font-size="9">Click Interval < 0.01s (Highbot)</text>
+                            <rect x="280" y="150" width="60" height="22" rx="4" fill="#FEE2E2"/>
+                            <text x="292" y="164" fill="#EF4444" font-family="Poppins" font-size="9" font-weight="700">99.1% Bot</text>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Cybersecurity & ML</span>
+                        <h3 class="project-title">Detecting Malicious Social Bots Based on Clickstream</h3>
+                        <p class="project-description">
+                            Built a system to identify malicious social bots by analyzing user clickstream behavior patterns and sequence analysis techniques. The project focuses on improving online security and detecting suspicious automated activities.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Machine Learning</span>
+                            <span class="project-tag">Sequence Analysis</span>
+                            <span class="project-tag">Data Processing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="resume.pdf" target="_blank" class="btn btn-sm btn-primary">
+                                <span>View Details</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                            <a href="https://github.com/kumarapubhavyasri" target="_blank" class="btn btn-sm btn-secondary">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Glassmorphic) -->
+                <div class="project-card glass-card reveal">
+                    <div class="card-glow-layer"></div>
+                    <div class="project-visual-wrapper">
+                        <!-- Custom SVG Illustration: DSAS E-Healthcare Framework -->
+                        <svg class="project-illustration" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="240" rx="12" fill="transparent"/>
+                            <!-- Shield Outline -->
+                            <path d="M200 40L280 70V130C280 180 200 210 200 210C200 210 120 180 120 130V70L200 40Z" stroke="rgba(6, 182, 212, 0.1)" stroke-width="8" stroke-linejoin="round"/>
+                            <path d="M200 45L270 72V125C270 168 200 195 200 195C200 195 130 168 130 125V72L200 45Z" fill="rgba(6, 182, 212, 0.05)"/>
+                            
+                            <!-- Red Cross / Health Symbol -->
+                            <rect x="188" y="90" width="24" height="24" rx="4" fill="#06B6D4" opacity="0.2"/>
+                            <path d="M200 94V110M192 102H208" stroke="#06B6D4" stroke-width="4" stroke-linecap="round"/>
+                            
+                            <!-- Padlock Graphic overlay -->
+                            <rect x="175" y="130" width="50" height="35" rx="6" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.05)" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.06))"/>
+                            <circle cx="200" cy="148" r="4" fill="#06B6D4"/>
+                            <path d="M190 130V120C190 114.477 194.477 110 200 110C205.523 110 210 114.477 210 120V130" stroke="#06B6D4" stroke-width="3" stroke-linecap="round"/>
+                            
+                            <!-- Security text labels -->
+                            <rect x="260" y="100" width="90" height="25" rx="4" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.05)" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.04))"/>
+                            <text x="272" y="116" fill="#10B981" font-family="Poppins" font-size="9" font-weight="700">AES-256 Encrypted</text>
+                            <rect x="50" y="100" width="80" height="25" rx="4" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.05)" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.04))"/>
+                            <text x="62" y="116" fill="#06B6D4" font-family="Poppins" font-size="9" font-weight="700">Authorized Key</text>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Cryptography & Healthcare</span>
+                        <h3 class="project-title">DSAS – Secure Data Sharing & Searchable E-Healthcare</h3>
+                        <p class="project-description">
+                            Designed a secure framework for healthcare systems that enables authorized searchable encrypted data sharing while maintaining patient privacy and data security within cloud-based healthcare environments.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Database Management</span>
+                            <span class="project-tag">Security Concepts</span>
+                            <span class="project-tag">Cloud-Based Data Sharing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="resume.pdf" target="_blank" class="btn btn-sm btn-primary">
+                                <span>View Details</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                            <a href="https://github.com/kumarapubhavyasri" target="_blank" class="btn btn-sm btn-secondary">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section section-padding section-bg">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Growth Story</span>
+                <h2 class="section-title">My Experience</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="timeline">
+                <!-- Timeline item 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">2024 - Present</span>
+                        <h3 class="timeline-title">Self-Learning & Skill Development</h3>
+                        <p class="timeline-subtitle">Independent Technical Growth</p>
+                        <p class="timeline-description">
+                            Committed to intensive self-learning across Python architecture, relational database management, data mining strategies, and analytical statistics. Engaged in practicing competitive programming concepts, refining code runtime efficiencies, and exploring modern API creation modules.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline item 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">2024 - 2025</span>
+                        <h3 class="timeline-title">Academic Engineering & Research Projects</h3>
+                        <p class="timeline-subtitle">Malla Reddy College of Engineering for Women</p>
+                        <p class="timeline-description">
+                            Engineered and documented advanced research-grade projects (ML Agriculture Prediction, Clickstream Bot Detection, and Secured Cloud Cryptography frameworks) for academic evaluations. Managed project iterations, performed data cleansing pipelines, and documented software design specifications.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline item 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Continuous Practice</span>
+                        <h3 class="timeline-title">Personal Hands-on Projects</h3>
+                        <p class="timeline-subtitle">Custom Application Development</p>
+                        <p class="timeline-description">
+                            Developed standalone utility frameworks including a command-line Student Management system, optimized SQL database normalization schemas, and responsive data analytics dashboards. Actively utilized Git versioning to track and organize code revisions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Academic Credentials</span>
+                <h2 class="section-title">Education</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="education-card glass-card reveal">
+                <div class="education-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                    </svg>
+                </div>
+                <div class="education-details">
+                    <span class="edu-date">2022 - 2026</span>
+                    <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+                    <h4 class="edu-college">Malla Reddy College of Engineering for Women</h4>
+                    <p class="edu-desc">
+                        Undergoing deep curriculum exposure in Computer Science, Database Management Systems, Object-Oriented Analysis, Python Programming, and Mathematics. Developing solid analytical thinking skills and collaborating on real-world engineering projects.
+                    </p>
+                    <div class="edu-badges">
+                        <span class="edu-badge">Class of 2026</span>
+                        <span class="edu-badge">Python Core Focus</span>
+                        <span class="edu-badge">Problem Solving Specialization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding section-bg">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Info cards column -->
+                <div class="contact-info reveal">
+                    <h3 class="contact-prompt">Have a role? Let's discuss details.</h3>
+                    <p class="contact-text">
+                        I am actively seeking software engineering positions, particularly Python developer and analytical problem-solving roles. Reach out and I will respond within 24 hours.
+                    </p>
+                    
+                    <div class="contact-details-cards">
+                        <!-- Direct Gmail Web Compose URL in new tab -->
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kumarapubhavyasri@gmail.com&su=Portfolio%20Contact&body=Hello%20KUMARAPU%20BHAVYA%20SRI" target="_blank" class="contact-detail-card glass-card">
+                            <div class="detail-icon email-bg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="detail-content">
+                                <span class="detail-label">Mail Me Directly</span>
+                                <span class="detail-value">kumarapubhavyasri@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <!-- Updated LinkedIn Profile Direct Card -->
+                        <a href="https://www.linkedin.com/in/kumarapu-bhavya-sri/" target="_blank" class="contact-detail-card glass-card">
+                            <div class="detail-icon email-bg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </div>
+                            <div class="detail-content">
+                                <span class="detail-label">LinkedIn Profile</span>
+                                <span class="detail-value">linkedin.com/in/kumarapu-bhavya-sri/</span>
+                            </div>
+                        </a>
+
+                        <!-- Direct Location Card -->
+                        <div class="contact-detail-card glass-card">
+                            <div class="detail-icon loc-bg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="detail-content">
+                                <span class="detail-label">Location</span>
+                                <span class="detail-value">Hyderabad, Telangana, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-channels">
+                        <span class="social-channels-label">Connect elsewhere:</span>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/kumarapu-bhavya-sri/" target="_blank" class="social-icon" aria-label="LinkedIn Profile">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </a>
+                            <a href="https://github.com/kumarapubhavyasri" target="_blank" class="social-icon" aria-label="GitHub Profile">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form column -->
+                <div class="contact-form-container glass-card reveal">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Opportunity Details" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Hi Kumarapu Bhavya Sri, I'm interested in discussing..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo">&lt;KB/&gt;</a>
+                <p>Aspiring Python Developer & Analytical Engineer</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 KUMARAPU BHAVYA SRI. All rights reserved.</p>
+                <p class="footer-credit">Handcrafted with passion & python-themed styling.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
