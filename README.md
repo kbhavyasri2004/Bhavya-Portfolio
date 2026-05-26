@@ -1,4 +1,3 @@
-# Bhavya-Portfolio
 # KUMARAPU BHAVYA SRI – Professional Portfolio
 
 A modern and responsive personal portfolio website built to showcase my skills, projects, education, and passion for software development and problem solving.
